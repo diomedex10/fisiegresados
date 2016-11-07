@@ -5,5 +5,5 @@
         <a href="#"></a>
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2015 <a href="http://acacha.org">Acacha.org</a></strong>
+    <strong>Copyright &copy; 2015 <a href="http://sistemas.unmsm.edu.pe">FISI</a></strong>
 </footer>

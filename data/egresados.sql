@@ -17,10 +17,7 @@
 
 --
 -- Table structure for table `alternativas`
-
-DROP DATABASE egresados;
-CREATE DATABASE egresados;
-
+--
 
 DROP TABLE IF EXISTS `alternativas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -263,4 +260,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-10-31 19:58:02
+-- Dump completed on 2016-11-06 16:21:56
