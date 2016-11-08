@@ -19,6 +19,7 @@ class CreatePreguntasTable extends Migration
             $table->boolean('estado');
             $table->integer('idEncuestas')->unsigned();
             $table->foreign('idEncuestas')->references('idEncuestas')->on('encuestas');
+            $table->onDelete('cascade');
             $table->timestamps();
         });
 

@@ -22,6 +22,10 @@ class RespuestaService
             $data2 = \App\Util\Encuesta::parserValuesEncuesta($data);
 
             foreach ($data2 as $key => $reg ) {
+                if (empty($reg['idAlternativas'])) {
+                    continue;
+                }
+
                 $mRespuesta = new Respuestas();
 
                 $mRespuesta->idEgresados    = $idEgresados;

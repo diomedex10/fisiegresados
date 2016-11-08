@@ -166,8 +166,8 @@ class PreguntaController extends Controller
     public function destroy($id)
     {
         try {
-            $mEncuesta = new PreguntaService();
-            $status    = $mEncuesta->destroy($id);
+            $mPregunta = new PreguntaService();
+            $status    = $mPregunta->destroy($id);
 
             if (!empty($status)) {
                 return back()->with(['msg' => 'Registro Eliminado', 'css' => 'alert alert-success']);

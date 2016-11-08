@@ -17,6 +17,7 @@ class CreateEncuestasTable extends Migration
             $table->increments('idEncuestas');
             $table->boolean('estado');
             $table->text('descripcion');
+            $table->onDelete('cascade');
             $table->timestamps();
         });
     }
