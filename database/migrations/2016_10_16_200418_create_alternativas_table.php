@@ -18,9 +18,12 @@ class CreateAlternativasTable extends Migration
             $table->boolean('estado');
             $table->text('descripcion');
             $table->integer('idPreguntas')->unsigned();
-            $table->foreign('idPreguntas')->references('idPreguntas')->on('preguntas');
-            $table->onDelete('cascade');
+            $table->foreign('idPreguntas')
+                ->references('idPreguntas')
+                ->on('preguntas')
+                ->onDelete('cascade');
             $table->timestamps();
+            $table->smallInteger('showInput')->nullable();
         });
     }
 

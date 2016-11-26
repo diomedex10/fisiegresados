@@ -10,6 +10,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 
+
 /**
  * Class HomeController
  * @package App\Http\Controllers
@@ -33,6 +34,18 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('login');
+        return view('welcome');
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return Response
+     */
+    public function hola()
+    {
+        //echo phpinfo();exit;
+        //return view('auth.login');
+        return view('home');
     }
 }

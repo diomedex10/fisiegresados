@@ -12,9 +12,10 @@
 */
 
 
-Route::get('/', 'EncuestaController@index');
+Route::get('/', 'HomeController@index');
 
 Auth::routes();
+Route::get('logout', 'Auth\LoginController@logout');
 
 Route::get('/encuesta', 'EncuestaController@index');
 Route::post('/encuesta/store', 'EncuestaController@store');
@@ -42,4 +43,9 @@ Route::post('/admin/alternativa/update', 'Admin\AlternativaController@update');
 Route::get('/admin/alternativa/{pregunta}/create', 'Admin\AlternativaController@create');
 Route::post('/admin/alternativa/store', 'Admin\AlternativaController@store');
 Route::delete('/admin/alternativa/{id}', 'Admin\AlternativaController@destroy')->name('admin.alternativa.destroy');
+
+Route::get('/admin/reporte/sexo', 'Admin\ReporteController@sexo');
+Route::get('/admin/reporte/trabajo', 'Admin\ReporteController@trabajo');
+Route::get('/admin/reporte/academico', 'Admin\ReporteController@academico');
+
 
